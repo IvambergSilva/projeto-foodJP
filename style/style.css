@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --red: #DA2535;
+    --gray: #616161;
+    --white: #FBFBFB;
+    --black: #292929;
+    --white-200: #F3F3F3;
+    --inter: 'Inter', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--white);
+}
+
+.container {
+    width: 360px;
+    margin: auto;
+    padding: 0 24px;
+    background: var(--white);
+    color: #292929;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+h2 {
+    font: 600 24px var(--montserrat);
+    text-align: center;
+}
+
+/* HEADER */
+
+header h1, footer h1 {
+    font: 700 18px var(--montserrat);
+}
+
+header h1 span, footer h1 span {
+    color: var(--red);
+}
+
+header img {
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main .introducao h1 {
+    font: 600 32px var(--inter);
+    margin-top: 57px;
+    text-align: center;
+}
+
+main .introducao p, main .modoDePreparo p {
+    font: 400 16px var(--inter);
+    margin: 24px 0 32px;
+    text-align: center;
+}
+
+main .introducao .btnCardapio {
+    width: 312px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background: var(--red);
+    border-radius: 6px;
+    font: 600 16px var(--inter);
+    color: var(--white);
+    border: none;
+}
+
+main .modoDePreparo {
+    text-align: center;
+}
+
+main .modoDePreparo img {
+    margin: 48px 0 56px;
+    border-radius: 8px;
+}
+
+main .modoDePreparo a {
+    font: 500 16px var(--inter);
+    color: var(--red);
+}
+
+main .maisPopulares > h2 {
+    margin: 50px 0 50px;
+}
+
+.blocoDeFundo {
+    text-align: center;
+    background: var(--white-200);
+    margin-bottom: 50px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+main .maisPopulares .blocoDeFundo h4 {
+    font: 500 24px var(--montserrat);
+    margin-top: 32px;
+}
+
+main .maisPopulares .blocoDeFundo p {
+    font: 400 16px var(--inter);
+    color: var(--gray);
+    margin: 16px 0;
+}
+
+main .maisPopulares .blocoDeFundo h3 {
+    font: 400 32px var(--montserrat);
+}
+
+.blocoDeFundo > img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.blocoDeFundo h3 {
+    font: 500 18px var(--montserrat);
+    margin-top: 16px;
+}
+
+.blocoDeFundo p {
+    font: 400 16px var(--inter);
+    color: var(--gray);
+    margin: 16px 0 8.5px;
+}
+
+main .comentarios .blocoDeFundo {
+    margin: 50px 0;
+}
+
+iframe {
+    width: 312px;
+    height: 242px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+main .localizacao .localizacaoEntrega {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .localizacao .localizacaoEntrega .search {
+    width: 262px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--black);
+    padding-left: 16px;
+    border-radius: 10px 0 0 10px;
+}
+
+main .localizacao .localizacaoEntrega .search img {
+    margin-right: 11px;
+}
+
+main .localizacao .localizacaoEntrega .search #inputLocalizacao {
+    border: none;
+    width: 190px;
+    outline: none;
+}
+
+main .localizacao .localizacaoEntrega .search #inputLocalizacao::placeholder,
+main .localizacao .localizacaoEntrega .search #inputLocalizacao {
+    font: 400 12px var(--inter);
+}
+
+main .localizacao .localizacaoEntrega .searchBTN{
+    background: var(--red);
+    width: 51px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+footer h5 {
+    font: 700 14px var(--montserrat);
+    margin: 32px 0 10px;
+}
+
+footer p, footer a {
+    font: 400 14px var(--montserrat);
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #292929;
+    display: block;
+}
